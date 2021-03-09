@@ -6,7 +6,7 @@
       dest: /var/www/default
 - hosts: host01
   tasks:
-  - name: "replace text 01"
+  - name: "replace text host01"
     replace: 
         path: /var/www/default/index.html
         regexp: 'port'
@@ -14,7 +14,7 @@
         backup: yes
 - hosts: host02
   tasks:
-  - name: "replace text 02"
+  - name: "replace text host02"
     replace: 
         path: /var/www/default/index.html
         regexp: 'port'
@@ -22,7 +22,7 @@
         backup: yes
 - hosts: host03
   tasks:
-  - name: "replace text 03"
+  - name: "replace text host03"
     replace: 
         path: /var/www/default/index.html
         regexp: 'port'

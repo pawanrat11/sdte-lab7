@@ -44,3 +44,4 @@
 
   - name: start the Nginx service, if necessary
     service: name=nginx state=started
+    
